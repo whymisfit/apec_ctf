@@ -1,2 +1,2 @@
 # apec_ctf
-web server for tasks and rating CTF
+web application for tasks and rating CTF
