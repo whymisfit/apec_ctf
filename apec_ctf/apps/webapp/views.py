@@ -3,7 +3,7 @@ from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class TasksPage(View, LoginRequiredMixin):
+class TasksPage(LoginRequiredMixin, View):
     login_url = '/signin/'
     template_name = 'webapp/tasks_page.html'
 
