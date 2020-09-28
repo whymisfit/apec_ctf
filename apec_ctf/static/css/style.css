@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 .tasks-block__task-title {
     margin-top: 5px;
     font-size: 24px;
-    font-family: "Roboto-Bold", serif;
+    font-family: "Roboto-Regular", serif;
 }
 
 .tasks-block__points-status {
