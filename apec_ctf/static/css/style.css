@@ -277,3 +277,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto-Bold", serif;
     font-size: 20px;
 }
+
+.rating-table__thead {
+    background-color: #545454;
+}
