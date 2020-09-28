@@ -1,0 +1,36 @@
+{% extends "webapp/base_webapp.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="tasks-block">
+            <h1 class="tasks-block__title">
+                Стеганография
+            </h1>
+            <div class="row">
+                {% for i in '1000000' %}
+                    <div class="col-md-4">
+                        <a href="{% url 'task_page' %}" class="tasks-block__link">
+                            <div class="tasks-block__task">
+                        <span class="tasks-block__number">
+                            #1
+                        </span>
+                                <p class="tasks-block__task-title">
+                                    В этой картинке явно что то есть
+                                </p>
+                                <div class="tasks-block__points-status">
+                            <span class="tasks-block__points">
+                                100
+                            </span>
+                                    <span class="tasks-block__status">
+                                Выполнено
+                            </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

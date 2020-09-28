@@ -3,11 +3,11 @@ from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class TasksPage(View):
+class TaskListPage(View):
     login_url = '/signin/'
 
     def get(self, request):
-        return render(request, 'webapp/pages/tasks_page.html',)
+        return render(request, 'webapp/pages/task_list_page.html', )
 
 
 class RatingPage(View):
@@ -15,3 +15,10 @@ class RatingPage(View):
 
     def get(self, request):
         return render(request, 'webapp/pages/rating_page.html')
+
+
+class TaskPage(View):
+    login_url = '/signin/'
+
+    def get(self, request):
+        return render(request, 'webapp/pages/task_page.html')

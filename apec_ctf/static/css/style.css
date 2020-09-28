@@ -273,11 +273,81 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
 }
 
-.table-rating__thead th{
+.table-rating__thead th {
     font-family: "Roboto-Bold", serif;
     font-size: 20px;
 }
 
 .rating-table__thead {
     background-color: #545454;
+}
+
+.task {
+    margin-top: 54px;
+}
+
+.task__section-title {
+    font-family: "Roboto-Bold", serif;
+    font-size: 64px;
+}
+
+.task__block {
+    background-color: #343434;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.task__number {
+    font-family: "Roboto-Light", serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.task__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.task__info p:first-child {
+    font-size: 36px;
+    max-width: 800px;
+    line-height: 0.9;
+}
+
+.task__info p:last-child {
+    font-size: 96px;
+    font-family: "Roboto-Bold", serif;
+    max-width: 800px;
+    line-height: 0.9;
+}
+
+.task__desc {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.task__form {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task__input {
+    width: 100%;
+    max-width: 730px;
+    background-color: transparent;
+    border: 0 solid #CACACA;
+    border-bottom-width: 2px;
+    padding: 10px;
+}
+
+.task__button {
+    width: 195px;
+    height: 50px;
+    background-color: #28A745;
+    font-size: 24px;
+    border: none;
+    border-radius: 6px;
 }
