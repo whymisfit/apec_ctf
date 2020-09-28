@@ -5,15 +5,17 @@
 
     <header class="header container fixed-top">
         <div class="header__logo">
-            <span class="header__apec">
+            <a href="{% url 'tasks_page' %}">
+                <span class="header__apec">
                 АПЭК
             </span>
-            <span class="header__ctf">
+                <span class="header__ctf">
                 CTF
             </span>
+            </a>
         </div>
         <div class="header__menu">
-            <a href="#" class="header__link">
+            <a href="{% url 'tasks_page' %}" class="header__link">
                 Задания
             </a>
             <a href="#" class="header__link">
