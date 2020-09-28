@@ -241,8 +241,39 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.rating-table {
+    margin-top: 54px;
+}
 
+.rating-table__title {
+    font-family: "Roboto-Bold", serif;
+    font-size: 64px;
+}
 
+.rating-table__table {
+    background-color: #343434;
+}
 
+.rating-table__table td {
+    vertical-align: middle !important;
+}
 
+.table-rating__number {
+    font-size: 18px;
+    font-family: "Roboto-Medium", serif;
+}
 
+.table-rating__name-team {
+    font-family: "Roboto-Regular", serif;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.table-rating__score {
+    font-size: 18px;
+}
+
+.table-rating__thead th{
+    font-family: "Roboto-Bold", serif;
+    font-size: 20px;
+}
