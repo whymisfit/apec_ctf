@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block root %}
+
+    <header class="header container fixed-top">
+        <div class="header__logo">
+            <span class="header__apec">
+                АПЭК
+            </span>
+            <span class="header__ctf">
+                CTF
+            </span>
+        </div>
+        <div class="header__menu">
+            <a href="#" class="header__link">
+                Задания
+            </a>
+            <a href="#" class="header__link">
+                Рейтинг
+            </a>
+        </div>
+    </header>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+{% endblock %}

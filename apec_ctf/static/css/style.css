@@ -10,6 +10,10 @@ body {
     background-color: #0C0C0C !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto-Bold", serif;
+}
+
 .background-logo {
     position: absolute;
     left: 7vw;
@@ -126,3 +130,92 @@ body {
     border-radius: 6px;
     font-family: "Roboto-Medium", serif;
 }
+
+.header {
+    padding: 15px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: block;
+    pointer-events: none;
+}
+
+.header__logo span {
+    display: block;
+    font-family: "RobotoMono-Bold", serif;
+}
+
+.header__apec {
+    font-size: 10px;
+}
+
+.header__ctf {
+    font-size: 36px;
+    line-height: 0.8;
+}
+
+.header__link {
+    margin: 0 5px;
+    color: #FBFBFB;
+}
+
+.content {
+    padding-top: 80px;
+}
+
+.tasks-block {
+    margin-top: 54px;
+}
+
+.tasks-block__title {
+    font-size: 64px;
+    margin-bottom: 19px;
+}
+
+.tasks-block__task {
+    border-radius: 12px;
+    background-color: #343434;
+    min-height: 190px;
+    padding: 15px 15px;
+    margin: 15px 0;
+}
+
+.tasks-block__number {
+    font-family: "Roboto-Light", serif;
+    font-size: 18px;
+}
+
+.tasks-block__task-title {
+    margin-top: 5px;
+    font-size: 24px;
+    font-family: "Roboto-Bold", serif;
+}
+
+.tasks-block__points-status {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks-block__points {
+    font-family: "Roboto-Medium", serif;
+    font-size: 30px;
+}
+
+.tasks-block__status {
+    font-family: "Roboto-Medium", serif;
+    font-size: 16px;
+    text-align: right;
+    color: #62FF86;
+}
+
+
+
+
+
+
