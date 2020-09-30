@@ -266,6 +266,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto-Medium", serif;
 }
 
+.table-rating__team {
+    display: flex;
+    align-items: center;
+}
+
+.table-rating__img-team {
+    width: 64px;
+    height: 64px;
+}
+
 .table-rating__name-team {
     font-family: "Roboto-Regular", serif;
     font-size: 18px;
