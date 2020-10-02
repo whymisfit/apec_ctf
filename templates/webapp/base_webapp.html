@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+
+{% block root %}
+
+    <header class="header container fixed-top">
+        <div class="header__logo">
+            <a href="{% url 'tasks_page' %}">
+                <span class="header__apec">
+                АПЭК
+            </span>
+                <span class="header__ctf">
+                CTF
+            </span>
+            </a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li>
+                    <a href="{% url 'tasks_page' %}" class="header__link">
+                        Задания
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'rating_page' %}" class="header__link">
+                        Рейтинг
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__menu">
+                <li>
+                    <a href="{% url 'logout' %}" class="header__link">
+                        Выйти
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+{% endblock %}

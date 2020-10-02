@@ -1,0 +1,52 @@
+{% extends 'webapp/base_webapp.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="rating-table">
+            <h1 class="rating-table__title">
+                Рейтинговая таблица
+            </h1>
+            <div class="row">
+                <div class="col">
+                    <table class="table table-borderless table-striped table-hover rating-table__table">
+                        <thead class="table-rating__thead rating-table__thead">
+                        <tr>
+                            <th scope="col">№</th>
+                            <th scope="col">Команда</th>
+                            <th scope="col">Счёт</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for team in teams %}
+                            <tr>
+                                <td>
+                                <span class="table-rating__number">
+                                    {{ forloop.counter }}
+                                </span>
+                                </td>
+                                <td>
+                                    <div class="table-rating__team">
+                                        <img src="{{ team.team_picture.url }}" class="table-rating__img-team"
+                                             alt="Изображение команды">
+                                        <span class="table-rating__name-team">
+                                            {{ team.team_name }}
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="table-rating__score">
+                                        {{ team.score }}
+                                    </span>
+                                </td>
+                            </tr>
+                        {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

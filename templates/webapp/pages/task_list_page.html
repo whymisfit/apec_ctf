@@ -1,0 +1,46 @@
+{% extends "webapp/base_webapp.html" %}
+
+{% block content %}
+    <div class="container">
+
+        {% for category in categories %}
+
+            <div class="tasks-block">
+                <h1 class="tasks-block__title">
+                    {{ category.category_name }}
+                </h1>
+                <div class="row">
+                    {% for task in tasks %}
+                        {% if task.category.id == category.id %}
+                            <div class="col-md-4">
+                                <a href="{% url 'task_page' task.id %}" class="tasks-block__link">
+                                    <div class="tasks-block__task">
+                                    <span class="tasks-block__number">
+                                        №{{ task.id }}
+                                    </span>
+                                        <p class="tasks-block__task-title">
+                                            {{ task.task_name }}
+                                        </p>
+                                        <div class="tasks-block__points-status">
+                                        <span class="tasks-block__points">
+                                            {{ task.points }}
+                                        </span>
+                                        <span class="tasks-block__status">
+                                            {% if task.solved.exists %}
+                                                Выполнено
+                                            {% endif %}
+                                        </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+            </div>
+        {% endfor %}
+
+
+    </div>
+{% endblock %}

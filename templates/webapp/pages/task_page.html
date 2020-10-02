@@ -1,0 +1,33 @@
+{% extends 'webapp/base_webapp.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="task">
+            <h1 class="task__section-title">
+                {{ task.category.category_name }}
+            </h1>
+            <div class="task__block">
+                <p class="task__number">
+                    #{{ task.id }}
+                </p>
+                <div class="task__info">
+                    <p>
+                        {{ task.task_name }}
+                    </p>
+                    <p>
+                        {{ task.points }}
+                    </p>
+                </div>
+                <p class="task__desc">
+                    {{ task.task_description }}
+                </p>
+                <form class="task__form">
+                    <input type="text" class="task__input" placeholder="flag{hello_:)}">
+                    <button class="task__button">
+                        Проверить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

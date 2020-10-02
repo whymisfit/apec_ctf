@@ -1,0 +1,379 @@
+@import "normalize.css";
+@import "fonts.css";
+
+* {
+    font-family: Roboto-Regular, serif;
+    color: #FBFBFB;
+}
+
+body {
+    background-color: #0C0C0C !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto-Bold", serif;
+}
+
+.background-logo {
+    position: absolute;
+    left: 7vw;
+    top: 5vw;
+    pointer-events: none;
+    z-index: -10;
+}
+
+.background-logo span {
+    color: #161616;
+    font-family: "RobotoMono-Bold", serif;
+
+    display: block;
+}
+
+.background-logo__apec {
+    font-family: "RobotoMono-Bold", serif;
+    font-size: 4vw;
+}
+
+.background-logo__ctf {
+    font-size: 35vw;
+    line-height: 0.7;
+    font-family: "RobotoMono-Bold", serif;
+}
+
+.background-logo__list-tasks {
+    display: flex;
+    margin-top: 1vw;
+    font-family: "RobotoMono-Bold", serif;
+}
+
+.background-logo__list-tasks span {
+    font-size: 4vw;
+    margin-right: 2vw;
+}
+
+
+.ctf-logo {
+    position: absolute;
+    top: 15vw;
+    right: 10vw;
+    pointer-events: none;
+}
+
+.ctf-logo span {
+    font-family: "RobotoMono-Bold", serif;
+    display: block;
+}
+
+.ctf-logo__apec {
+    font-size: 2vw;
+}
+
+.ctf-logo__ctf {
+    font-size: 18vw;
+    line-height: 0.7;
+}
+
+.ctf-logo__list-tasks {
+    display: flex;
+    margin-top: 1vw;
+}
+
+.ctf-logo__list-tasks span {
+    font-size: 2vw;
+    margin-right: 1.5vw;
+}
+
+
+.signin {
+    display: block;
+    position: absolute;
+    width: 420px;
+    min-height: 290px;
+    background-color: #272727;
+    padding: 20px 20px;
+    border-radius: 12px;
+    margin-top: calc(50vh - 145px);
+    left: 7vw;
+}
+
+.signin__title {
+    font-size: 42px;
+    font-family: "Roboto-Bold", serif;
+    line-height: 0.9;
+}
+
+.signin__form {
+    display: block;
+    margin-top: 33px;
+}
+
+.signin__form p {
+    font-family: "Roboto-Regular", serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.signin__input {
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    background-color: #4B4B4B;
+    border-color: transparent;
+    margin: 5px 0;
+}
+
+.signin__button {
+    margin-top: 43px;
+    display: block;
+    width: 138px;
+    height: 37px;
+    background-color: #28A745;
+    border: none;
+    border-radius: 6px;
+    font-family: "Roboto-Medium", serif;
+    font-size: 20px;
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+    height: 80px;
+    background-color: rgba(12, 12, 12, 0.9);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.header__logo {
+    display: block;
+}
+
+.header__logo span {
+    display: block;
+    font-family: "RobotoMono-Bold", serif;
+    pointer-events: none;
+}
+
+.header__logo a:hover {
+    text-decoration: none;
+}
+
+.header__apec {
+    font-size: 12px;
+    line-height: 0.5;
+}
+
+.header__ctf {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.header__link {
+    /*margin: 0 5px;*/
+    padding: 10px;
+    color: #FBFBFB;
+    font-size: 20px;
+    font-family: "Roboto-Regular", serif;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    text-decoration: none;
+    border: 0 solid #FBFBFB;
+    color: #FBFBFB;
+    border-bottom-width: 2px;
+}
+
+.content {
+    padding-top: 80px;
+}
+
+.tasks-block {
+    margin-top: 54px;
+}
+
+.tasks-block__title {
+    font-size: 64px;
+    margin-bottom: 19px;
+}
+
+.tasks-block__task {
+    border-radius: 12px;
+    background-color: #343434;
+    min-height: 190px;
+    padding: 15px 15px;
+    margin: 15px 0;
+}
+
+.tasks-block__task:hover {
+    background-color: #4a4a4a;
+}
+
+.tasks-block__number {
+    font-family: "Roboto-Light", serif;
+    font-size: 18px;
+}
+
+.tasks-block__task-title {
+    margin-top: 5px;
+    font-size: 24px;
+    font-family: "Roboto-Regular", serif;
+}
+
+.tasks-block__points-status {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks-block__points {
+    font-family: "Roboto-Medium", serif;
+    font-size: 30px;
+}
+
+.tasks-block__status {
+    font-family: "Roboto-Medium", serif;
+    font-size: 16px;
+    text-align: right;
+    color: #62FF86;
+}
+
+.tasks-block__link {
+    text-decoration: none;
+}
+
+.tasks-block__link:hover {
+    text-decoration: none;
+}
+
+.rating-table {
+    margin-top: 54px;
+}
+
+.rating-table__title {
+    font-family: "Roboto-Bold", serif;
+    font-size: 64px;
+}
+
+.rating-table__table {
+    background-color: #343434;
+}
+
+.rating-table__table td {
+    vertical-align: middle !important;
+}
+
+.table-rating__number {
+    font-size: 18px;
+    font-family: "Roboto-Medium", serif;
+}
+
+.table-rating__team {
+    display: flex;
+    align-items: center;
+}
+
+.table-rating__img-team {
+    width: 64px;
+    height: 64px;
+}
+
+.table-rating__name-team {
+    font-family: "Roboto-Regular", serif;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.table-rating__score {
+    font-size: 18px;
+}
+
+.table-rating__thead th {
+    font-family: "Roboto-Bold", serif;
+    font-size: 20px;
+}
+
+.rating-table__thead {
+    background-color: #545454;
+}
+
+.task {
+    margin-top: 54px;
+}
+
+.task__section-title {
+    font-family: "Roboto-Bold", serif;
+    font-size: 64px;
+}
+
+.task__block {
+    background-color: #343434;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.task__number {
+    font-family: "Roboto-Light", serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.task__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.task__info p:first-child {
+    font-size: 36px;
+    max-width: 800px;
+    line-height: 0.9;
+}
+
+.task__info p:last-child {
+    font-size: 96px;
+    font-family: "Roboto-Bold", serif;
+    max-width: 800px;
+    line-height: 0.9;
+}
+
+.task__desc {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.task__form {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task__input {
+    width: 100%;
+    max-width: 730px;
+    background-color: transparent;
+    border: 0 solid #CACACA;
+    border-bottom-width: 2px;
+    padding: 10px;
+}
+
+.task__button {
+    width: 195px;
+    height: 50px;
+    background-color: #28A745;
+    font-size: 24px;
+    border: none;
+    border-radius: 6px;
+}
