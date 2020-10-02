@@ -14,14 +14,27 @@
             </span>
             </a>
         </div>
-        <div class="header__menu">
-            <a href="{% url 'tasks_page' %}" class="header__link">
-                Задания
-            </a>
-            <a href="{% url 'rating_page' %}" class="header__link">
-                Рейтинг
-            </a>
-        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li>
+                    <a href="{% url 'tasks_page' %}" class="header__link">
+                        Задания
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'rating_page' %}" class="header__link">
+                        Рейтинг
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__menu">
+                <li>
+                    <a href="{% url 'logout' %}" class="header__link">
+                        Выйти
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <div class="content">

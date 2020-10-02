@@ -31,16 +31,19 @@
         <p class="signin__title">
             Авторизация
         </p>
-        <form class="signin__form">
+        <form class="signin__form" method="post" action="{% url 'login' %}">
+
+            {% csrf_token %}
+
             <p>
-                Команда
+                Имя пользователя
             </p>
-            <input type="text" class="signin__input">
+            <input type="text" class="signin__input" name="username">
             <p>
                 Пароль
             </p>
-            <input type="text" class="signin__input">
-            <button class="signin__button">
+            <input type="password" class="signin__input" name="password">
+            <button class="signin__button" type="submit" >
                 Войти
             </button>
         </form>
