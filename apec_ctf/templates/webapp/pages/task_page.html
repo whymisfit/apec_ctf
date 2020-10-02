@@ -4,23 +4,22 @@
     <div class="container">
         <div class="task">
             <h1 class="task__section-title">
-                Стеганография
+                {{ task.category.category_name }}
             </h1>
             <div class="task__block">
                 <p class="task__number">
-                    #1
+                    #{{ task.id }}
                 </p>
                 <div class="task__info">
                     <p>
-                        В этой картинке явно что то есть, подозрительно...
+                        {{ task.task_name }}
                     </p>
                     <p>
-                        100
+                        {{ task.points }}
                     </p>
                 </div>
                 <p class="task__desc">
-                    Мы перехватили переговоры германии и польши, не понятно при чем здесь навальный, но и зачем такую
-                    картинку передали, тоже не известнро
+                    {{ task.task_description }}
                 </p>
                 <form class="task__form">
                     <input type="text" class="task__input" placeholder="flag{hello_:)}">
