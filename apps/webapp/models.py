@@ -48,6 +48,10 @@ class Task(models.Model):
     task_description = models.TextField(verbose_name="Описание задания", max_length=1024)
     flag = models.CharField(verbose_name="Флаг", max_length=32, )
     points = models.PositiveIntegerField(verbose_name="Количество очков", default=0)
+    attached_file = models.FileField(verbose_name="Прикрепленный файл", upload_to="attached_files/", null=True, blank=True)
+
+    def get_short_file_name(self):
+        return self.attached_file.name.replace("attached_files/", '')
 
     class Meta:
         verbose_name = "Задание"

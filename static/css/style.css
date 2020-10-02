@@ -404,3 +404,9 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 12px;
     color: #00D1FF;
 }
+
+.attach__no-file {
+    font-family: "Roboto-Light", serif;
+    font-size: 18px;
+    margin: 0;
+}
