@@ -377,3 +377,30 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     border-radius: 6px;
 }
+
+.task__attach {
+    display: block;
+    margin-top: 30px;
+}
+
+.attach__title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.attach__list {
+    display: flex;
+}
+
+.attach__link {
+    color: #00D1FF;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.attach__link:hover {
+    text-decoration: none;
+    background-color: #484848;
+    border-radius: 12px;
+    color: #00D1FF;
+}
