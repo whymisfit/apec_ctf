@@ -26,8 +26,9 @@
                                             {{ task.points }}
                                         </span>
                                         <span class="tasks-block__status">
-                                            {% if task.solved.exists %}
+                                            {% if team in task.solved.filter %}
                                                 Выполнено
+{#                                                {{ task.solved.filter.id }}#}
                                             {% endif %}
                                         </span>
                                         </div>

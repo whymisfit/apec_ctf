@@ -31,19 +31,21 @@
                                 {{ task.get_short_file_name }}
                             </a>
                         </div>
-                        {% else %}
+                    {% else %}
                         <p class="attach__no-file">
                             Отсутствуют
                         </p>
                     {% endif %}
 
                 </div>
-                <form class="task__form">
-                    <input type="text" class="task__input" placeholder="flag{hello_:)}">
-                    <button class="task__button">
-                        Проверить
-                    </button>
-                </form>
+                {% if team not in task.solved.filter %}
+                    <form class="task__form">
+                        <input type="text" class="task__input" placeholder="flag{hello_:)}">
+                        <button class="task__button">
+                            Проверить
+                        </button>
+                    </form>
+                {% endif %}
             </div>
         </div>
     </div>
